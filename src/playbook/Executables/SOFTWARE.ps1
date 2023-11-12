@@ -38,6 +38,13 @@ if ($Brave) {
 	exit
 }
 
+# Firefox
+if ($FireFox) {
+	Write-Host "Installing Firefox..."
+ 	& curl.exe -LSs "https://download.mozilla.org/?product=firefox-stub&os=win&lang=en"
+  	exit
+   }
+
 # Waterfox
 if ($Waterfox) {
 	Write-Host "Installing Waterfox..."
